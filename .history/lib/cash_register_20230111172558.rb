@@ -25,8 +25,8 @@ class CashRegister
     def void_last_transaction
        #  binding.pry
         if (self.last_transaction[:price])
-            self.total -= self.last_transaction[:price]
-            items.size == 0 ? 0.0 : items.slice(0, items.size - self.last_transaction[:quantity])
+            self.total -= self.last_transaction"price"]
+            items.size == 0 ? 0.0 : items.slice(0, items.size - self.last_transaction["quantity"])
         end 
     end
 
@@ -50,6 +50,6 @@ class CashRegister
     end
 end
 
-# test = CashRegister.new
-# binding.pry
-# 0
+test = CashRegister.new
+binding.pry
+0

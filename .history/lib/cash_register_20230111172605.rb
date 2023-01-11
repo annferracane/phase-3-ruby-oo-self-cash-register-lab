@@ -50,6 +50,6 @@ class CashRegister
     end
 end
 
-# test = CashRegister.new
-# binding.pry
-# 0
+test = CashRegister.new
+binding.pry
+0
